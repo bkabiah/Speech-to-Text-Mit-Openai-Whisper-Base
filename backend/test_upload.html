@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Direct API Test</h2>
+  <form action="http://31.97.158.220:8000/api/v1/transcribe" method="POST" enctype="multipart/form-data">
+    <label>File: <input type="file" name="file" accept="audio/*"></label><br><br>
+    <label>Plugins: <input type="text" name="plugins" value="summarize"></label><br><br>
+    <input type="submit" value="Direct POST to Backend">
+  </form>
+</body>
+</html>
